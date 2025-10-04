@@ -93,6 +93,27 @@
     </section>
   </main>
 
+  <!-- Canvas Shape -->
+<section class="canvas-art">
+  <h2>Your Heart in Action ❤️</h2>
+  <canvas id="heartCanvas" width="200" height="200"></canvas>
+</section>
+
+<script>
+  const canvas = document.getElementById('heartCanvas');
+  const ctx = canvas.getContext('2d');
+
+  ctx.fillStyle = '#e63946';
+  ctx.beginPath();
+  ctx.moveTo(100, 30);
+  ctx.bezierCurveTo(120, 0, 180, 0, 180, 60);
+  ctx.bezierCurveTo(180, 110, 100, 170, 100, 170);
+  ctx.bezierCurveTo(100, 170, 20, 110, 20, 60);
+  ctx.bezierCurveTo(20, 0, 80, 0, 100, 30);
+  ctx.fill();
+</script>
+
+
   <!-- Footer -->
   <footer>
     <p>© 2025 Stronger by the Plate</p>
